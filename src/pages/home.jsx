@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react';
 import MenuItem from '../components/menuitem';
 import { Link } from 'react-router-dom';
 import { CartProvider } from '../context/cartcontext';
-import Test from '../context/text'
+// import Test from '../context/text'
 const Home = () => {
     const [meals, setMeals] = useState(null);
     // const menuItems = [
