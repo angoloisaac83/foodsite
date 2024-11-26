@@ -1,4 +1,3 @@
-
 const Drinks = {
   "menu": {
     "Cocktails": [
@@ -90,7 +89,30 @@ const Drinks = {
         "type": "Cognac",
         "price": "N110,000.00"
       }
+    ],
+    "Food": [
+      {
+        "name": "Burger",
+        "ingredients": "Beef Patty, Lettuce, Tomato, Cheese, Brioche Bun",
+        "price": "N5,000.00"
+      },
+      {
+        "name": "Pizza",
+        "ingredients": "Mozzarella, Tomato Sauce, Basil",
+        "price": "N7,000.00"
+      },
+      {
+        "name": "Pasta",
+        "ingredients": "Cream Sauce, Grilled Chicken, Parmesan",
+        "price": "N6,500.00"
+      },
+      {
+        "name": "Salad",
+        "ingredients": "Lettuce, Cherry Tomatoes, Feta, Olives, Balsamic Dressing",
+        "price": "N4,000.00"
+      }
     ]
   }
-}
-export {Drinks}
+};
+
+export { Drinks };

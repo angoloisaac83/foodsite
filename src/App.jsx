@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import Test from './components/test';
 import Home from './pages/home';
 import Cart from './components/cart';
 import Register from './pages/register';
@@ -22,6 +23,7 @@ const App = () => (
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="/test" element={<Test />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/buy" element={<Buynow />} />
                 <Route path="/login" element={<Login />} />

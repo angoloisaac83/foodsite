@@ -9,7 +9,7 @@ const CartItem = ({ item }) => {
             <div>
                 <h4 className="font-semibold">{item.name}</h4>
                 <p className="text-gray-600">Qty: {item.quantity}</p>
-                <p className="text-green-600">${(item.price * item.quantity).toFixed(2)}</p>
+                <p className="text-yellow-600">${(item.price * item.quantity).toFixed(2)}</p>
             </div>
             <button
                 onClick={() => removeFromCart(item.id)}

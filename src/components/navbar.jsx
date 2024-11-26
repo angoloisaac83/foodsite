@@ -15,7 +15,7 @@ const Navbar = () => {
     };
   
     return (
-        <nav className="bg-green-400 z-[100] shadow-xl fixed top-0 left-0 w-full h-fit text-white p-2">
+        <nav className="bg-black z-[100] shadow-xl fixed top-0 left-0 w-full h-fit text-white p-2">
             <div className="container flex justify-between items-center">
                 <h2 className="text-3xl font-bold text-yellow-400"><Link to="/"><img src={logo} className='w-[150px] object-contain h-[60px]' alt="" /></Link></h2>
                 <ul className="flex mobile:hidden space-x-6 items-center">

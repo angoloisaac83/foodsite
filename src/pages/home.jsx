@@ -39,7 +39,7 @@ const Home = () => {
                   <p className='w-[45%] mobile:w-[95%] mobile:text-[18px] pb-[20px] text-xl font-semibold'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum consectetur nulla minus eveniet culpa dignissimos modi expedita corrupti at nostrum, animi voluptates officia voluptatibus maxime ut, tempora incidunt similique obcaecati!
                   </p>
-                  <button className='bg-green-500 text-white hover:text-yellow-500 px-[15px] py-[7px] text-[19px] rounded-md'><Link to="/login">Start Shopping</Link></button>
+                  <button className='bg-black text-white hover:text-yellow-500 px-[15px] py-[7px] text-[19px] rounded-md'><Link to="/login">Start Shopping</Link></button>
                 </div>
           </header>
         <div className="container mx-auto w-full h-fit p-6">

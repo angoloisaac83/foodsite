@@ -28,7 +28,7 @@ const Buynow = ()=>{
                     </span></span>
                     <p className="text-[18px] py-4">Price: $ {data.price*quantity}</p>
                 <button
-                    className="bg-green-500 flex items-center text-[18px] justify-center gap-2 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
+                    className="bg-black flex items-center text-[18px] justify-center gap-2 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
                 >
                     Buy Now
                 </button>
