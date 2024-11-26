@@ -263,6 +263,8 @@ import { Link } from 'react-router-dom';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("Shakes & Smoothies");
+    //   let data = {'id':id, 'name':name,'image':image, 'description':description, 'price':price} ;
+  
 
   const categoryNames = Object.keys(Drinks.menu);
 
@@ -275,7 +277,7 @@ const App = () => {
             <h3 className="text-xl font-semibold mb-2 pt-3">{items.name}</h3>
             <p className="text-gray-600 overflow-y-scroll h-[65px]"><b>Ingredients: </b>{items.ingredients }</p>
             <p className="text-lg font-bold text-yellow-600">{items.price}</p>
-            <div className="flex w-full h-fit px-3 py-2 justify-center gap-[48px] items-center">
+            <div className="flex w-full h-fit px-3 py-2 justify-between mobile:justify-center mobile:gap-[48px] items-center">
                 <button
             //    onClick={handleAddToCart}
                className="bg-black flex items-center text-[13px] justify-center gap-2 text-white px-4 py-2 rounded hover:text-yellow-600 transition-colors"
@@ -286,7 +288,17 @@ const App = () => {
                 <button
                     className="bg-black flex items-center text-[13px] justify-center gap-2 text-white px-4 py-2 rounded hover:text-yellow-600 transition-colors"
                 >
-                    <Link to='/buy' >Buy Now</Link>
+                <Link
+                    to='/buy'
+                    state={{
+                        id: items.id, // Assuming there's an `id` property in items
+                        name: items.name, 
+                        image: items.name, // Ensure that you have an `image` property in your `items` object
+                        description: items.ingredients, // Ensure this is the correct field for the description
+                        price: items.price
+                    }}
+                    >
+                    Buy Now</Link>
                 </button>
        </div>
    </div>
