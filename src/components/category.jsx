@@ -275,14 +275,14 @@ const App = () => {
             <h3 className="text-xl font-semibold mb-2 pt-3">{items.name}</h3>
             <p className="text-gray-600 overflow-y-scroll h-[65px]"><b>Ingredients: </b>{items.ingredients }</p>
             <p className="text-lg font-bold text-yellow-600">{items.price}</p>
-            <div className="flex w-full h-fit px-3 py-2 justify-between items-center">
+            <div className="flex w-full h-fit px-3 py-2 justify-center gap-[48px] items-center">
                 <button
             //    onClick={handleAddToCart}
                className="bg-black flex items-center text-[13px] justify-center gap-2 text-white px-4 py-2 rounded hover:text-yellow-600 transition-colors"
                 >
                     <FaShoppingCart className="mr-1" />
                     Add to Cart
-                </button>
+                </button><br />
                 <button
                     className="bg-black flex items-center text-[13px] justify-center gap-2 text-white px-4 py-2 rounded hover:text-yellow-600 transition-colors"
                 >
